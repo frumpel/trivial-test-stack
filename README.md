@@ -18,3 +18,8 @@ aws cloudformation delete-stack --stack-name trivial-test
 Useful links for later
 
 * https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-console-create-stacks-quick-create-links.html
+
+Testing - this will break as API location changes
+
+[Launch Stack](https://lze585tezf.execute-api.us-west-2.amazonaws.com/Prod/?templateUrl=https://raw.githubusercontent.com/frumpel/trivial-test-stack/main/template.json&param_BucketName=testing-only-do-not-use&param_BucketNameErrorUndefinedParam=testing-only-do-not-use)
+
