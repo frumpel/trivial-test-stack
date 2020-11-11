@@ -2,5 +2,9 @@
     {
         "ParameterKey": "BucketName",
         "ParameterValue": "testing-only-do-not-use"
+    },
+    {
+        "ParameterKey": "BucketNameErrorUndefinedParam",
+        "ParameterValue": "testing-only-do-not-use"
     }
 ]
