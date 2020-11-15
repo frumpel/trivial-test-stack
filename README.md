@@ -31,4 +31,9 @@ This button will use the content of `template.yaml`. Any required parameters wil
 
 [![Launch Stack in AWS](https://www.stacklauncher.cloud/assets/icons/button-aws-18.png)](https://api.stacklauncher.cloud?templateUrl=https://raw.githubusercontent.com/frumpel/trivial-test-stack/main/template.yaml)
 
+### Broken link test 
+
+This button references a bad location for the `template.json`:
+
+[![Launch Stack in AWS](https://www.stacklauncher.cloud/assets/icons/button-aws-18.png)](https://api.stacklauncher.cloud?templateUrl=https://raw.githubusercontent.com/frumpel/trivial-test-stack/main/template.jsonx)
 
