@@ -1,8 +1,10 @@
-# trivial-test-stack
+# Trivial test stack for AWS CloudFormation
 
-This stack will create an S3 bucket. Name of the bucket is defined by a parameter
+This stack will create an S3 bucket in AWS. The name of the bucket is defined by a parameter.
 
-Example invocation
+## Invoking via CLI
+
+Example invocation. This presumes that you have installed the AWS CLI and configured access credentials:
 
 ```
 aws cloudformation create-stack \
@@ -15,11 +17,18 @@ aws s3 ls
 aws cloudformation delete-stack --stack-name trivial-test
 ```
 
-Useful links for later
+## Invoking using the AWS CloudFormation console
 
-* https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-console-create-stacks-quick-create-links.html
+To launch this stack directly from the AWS console, make sure you are logged into the AWS console in this browser. Then use this button, created by [stacklauncher.cloud](https://www.stacklauncher.cloud):
 
-Testing - this will break as API location changes
+### Using JSON template without parameters
 
-[Launch Stack](https://lze585tezf.execute-api.us-west-2.amazonaws.com/Prod/?templateUrl=https://raw.githubusercontent.com/frumpel/trivial-test-stack/main/template.json&param_BucketName=testing-only-do-not-use&param_BucketNameErrorUndefinedParam=testing-only-do-not-use)
+This button will use the content of `template.json`. Any required parameters will have to be defined in the AWS console:
 
+[![Launch Stack in AWS](https://www.stacklauncher.cloud/assets/icons/button-aws-18.png)](https://api.stacklauncher.cloud?templateUrl=https://raw.githubusercontent.com/frumpel/trivial-test-stack/main/template.json)
+
+### Using YAML template without parameters
+
+This button will use the content of `template.yaml`. Any required parameters will have to be defined in the AWS console:
+
+[![Launch Stack in AWS](https://www.stacklauncher.cloud/assets/icons/button-aws-18.png)](https://api.stacklauncher.cloud?templateUrl=https://raw.githubusercontent.com/frumpel/trivial-test-stack/main/template.yaml)
